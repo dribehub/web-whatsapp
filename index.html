@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/1383/1383269.png">
+    <title>WhatsApp Messages</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="https://image.flaticon.com/icons/png/512/1383/1383269.png" 
+                 alt="WhatsApp Icon" height="100px", width="100px"></img><br>
+        </div>
+        <div class="box">
+            <label for="phone">Phone number</label>
+            <input type="text" 
+                   id="phone" 
+                   class="textbox" 
+                   value="+355 "><br><br>
+            <label for="msg">Text message</label>
+            <textarea type="text" 
+                      id="msg" 
+                      class="textbox" 
+                      placeholder="Type a message"
+                      spellcheck="false"></textarea><br><br>
+            <button type="button" 
+                    id="submit" 
+                    onclick="openLink()">
+                Go to WhatsApp!
+            </button><br><br>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

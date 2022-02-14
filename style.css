@@ -1,0 +1,73 @@
+body {
+    /* background-color: #273027; */
+    background-image: url("background.png");
+    text-align: center;
+}
+
+.image {
+    padding-bottom: 15%;
+}
+
+.container {
+    display: block;
+    max-width: 200px;
+    border: 3px solid darkslategrey;
+    padding: 5%;
+    background-color: rgba(47, 79, 79, 0.856);
+    color: aliceblue;
+    font-size: large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textbox {
+    max-width: 75%;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 49, 29);
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgba(47, 248, 181, 0.288);
+    padding: 12px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+#msg {
+    max-height: 50%;
+    transition: all 0.2s ease-in-out;
+    text-align: left;
+    font-family: 'Noto';
+}
+
+.textbox:focus {
+    max-width: 100%;
+}
+
+#msg:focus {
+    max-height: 100%;
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.6;
+    font-family: 'Noto';
+}
+
+#submit {
+    padding: 5px 8px;
+    background-color: rgba(127, 255, 212, 0.616);
+    border: 2px solid rgb(0, 49, 29);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(70, 138, 115, 0.418);
+}
+
+#submit:hover {
+    transform: translateY(2px);
+    box-shadow: 0 0;
+}
+
+label {
+    color: aquamarine;
+}
